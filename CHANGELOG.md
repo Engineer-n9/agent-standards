@@ -2,6 +2,11 @@
 
 All notable changes to this standards kit are recorded here.
 
+## 1.0.1 — 2026-09-09
+
+- Add `CLAUDE.md` as the operating manual for maintaining the standards repository.
+- Require the operating manual in structural validation and link it from the repository README.
+
 ## 1.0.0 — 2026-09-09
 
 Initial versioned baseline extracted from proven Component Database and ll_pipeline orchestration practices.
