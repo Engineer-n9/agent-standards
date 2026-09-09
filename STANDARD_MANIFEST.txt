@@ -1,0 +1,20 @@
+# Files that form the portable 1.0.0 baseline.
+# Consumer repositories may add local domain rules, but must record any changed
+# standard-controlled file in Documentation/agent-governance/LOCAL_OVERLAY.md.
+
+.claude/agents/sprint-architect.md
+.claude/agents/sprint-coder.md
+.claude/agents/senior-reviewer.md
+.claude/skills/finalize-branch-work/SKILL.md
+.claude/skills/planning-package-review/SKILL.md
+.claude/skills/evidence-gated-planning/SKILL.md
+.claude/skills/source-context-and-artifact-propagation-audit/SKILL.md
+.github/agents/sprint-architect.agent.md
+.github/agents/sprint-coder.agent.md
+.github/agents/senior-reviewer.agent.md
+.github/copilot-instructions.md
+.github/ORCHESTRATION_ADDENDUM.md
+.github/skills/finalize-branch-work/SKILL.md
+.github/skills/planning-package-review/SKILL.md
+.github/skills/evidence-gated-planning/SKILL.md
+.github/skills/source-context-and-artifact-propagation-audit/SKILL.md
