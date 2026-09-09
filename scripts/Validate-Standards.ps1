@@ -7,6 +7,7 @@ $ErrorActionPreference = 'Stop'
 $required = @(
     'VERSION',
     'README.md',
+    'CLAUDE.md',
     'CHANGELOG.md',
     '.claude/agents/sprint-architect.md',
     '.claude/agents/sprint-coder.md',

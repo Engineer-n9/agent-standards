@@ -4,6 +4,8 @@ Versioned, reusable operating standards for repositories that use Claude Code ro
 
 **Current release:** `1.0.0`
 
+Start with [CLAUDE.md](CLAUDE.md), the operating manual for maintaining this standards repository.
+
 This repository owns generic workflow behavior. It deliberately does **not** own a product repository's domain rules, secrets, data boundaries, test commands, paths, Azure DevOps identifiers, or architecture decisions.
 
 ## Standard layout

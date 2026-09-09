@@ -1,6 +1,8 @@
 # Files that form the portable 1.0.0 baseline.
 # Consumer repositories may add local domain rules, but must record any changed
 # standard-controlled file in Documentation/agent-governance/LOCAL_OVERLAY.md.
+# This repository's CLAUDE.md governs standards maintenance and is not copied
+# into consumer repositories.
 
 .claude/agents/sprint-architect.md
 .claude/agents/sprint-coder.md
