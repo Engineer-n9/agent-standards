@@ -1,0 +1,7 @@
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Consumer-specific generated state must not be added here.
