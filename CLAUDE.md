@@ -1,7 +1,7 @@
-# AI Hub Agent Standards — Operating Manual
+# Agent Standards — Operating Manual
 
 > **Canonical reusable workflow authority.**
-> This repository defines shared agent-workflow behavior for AI Hub consumer repositories. It does not define any product repository's domain behavior.
+> This repository defines shared agent-workflow behavior for consumer repositories. It does not define any product repository's domain behavior.
 
 ## Purpose and scope
 
