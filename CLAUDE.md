@@ -12,7 +12,8 @@ Keep here:
 - reusable architect -> approved packet -> coder -> reviewer workflow;
 - generic planning, evidence, context/artifact, and branch-finalization safeguards;
 - Copilot worker visibility and delegation metadata;
-- templates and consumer-adoption governance.
+- templates and consumer-adoption governance;
+- optional packs only when their behavior has been validated as generic across real use.
 
 Do **not** put here:
 

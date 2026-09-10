@@ -2,6 +2,12 @@
 
 All notable changes to this standards kit are recorded here.
 
+## 1.1.0 — 2026-09-10
+
+- Add the optional Data Analysis Pack: user-facing Data Analyst role, evidence-gated generic analysis skill, Copilot adapter, and reusable analysis templates.
+- Add explicit generic safeguards for data provenance, classification, ambiguity, reproducibility, uncertainty, dependence, and inclusive-population envelope interpretation.
+- Keep schemas, units, source paths, population rules, thresholds, corridor semantics, and plotter automation consumer-local.
+
 ## 1.0.1 — 2026-09-09
 
 - Add `CLAUDE.md` as the operating manual for maintaining the standards repository.

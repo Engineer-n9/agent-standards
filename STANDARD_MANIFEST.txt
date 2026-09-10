@@ -1,4 +1,4 @@
-# Files that form the portable 1.0.0 baseline.
+# Files that form the portable 1.1.0 baseline.
 # Consumer repositories may add local domain rules, but must record any changed
 # standard-controlled file in Documentation/agent-governance/LOCAL_OVERLAY.md.
 # This repository's CLAUDE.md governs standards maintenance and is not copied
@@ -20,3 +20,14 @@
 .github/skills/planning-package-review/SKILL.md
 .github/skills/evidence-gated-planning/SKILL.md
 .github/skills/source-context-and-artifact-propagation-audit/SKILL.md
+
+# Optional Data Analysis Pack (install only when the consumer needs it).
+.claude/agents/data-analyst.md
+.github/agents/data-analyst.agent.md
+.claude/skills/generic-data-analysis/SKILL.md
+.github/skills/generic-data-analysis/SKILL.md
+templates/data-analysis/analysis-request.md
+templates/data-analysis/data-contract.md
+templates/data-analysis/run-manifest.md
+templates/data-analysis/analysis-report.md
+docs/packs/DATA_ANALYSIS_PACK.md

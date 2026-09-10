@@ -2,7 +2,7 @@
 
 Versioned, reusable operating standards for repositories that use Claude Code roles and VS Code GitHub Copilot custom-agent orchestration.
 
-**Current release:** `1.0.0`
+**Current release:** `1.1.0`
 
 Start with [CLAUDE.md](CLAUDE.md), the operating manual for maintaining this standards repository.
 
@@ -16,10 +16,16 @@ This repository owns generic workflow behavior. It deliberately does **not** own
 .github/agents/                         Copilot-only adapters
 .github/copilot-instructions.md         Copilot entry wrapper
 .github/ORCHESTRATION_ADDENDUM.md        Copilot delegation policy
-templates/                              Consumer-copy templates
-docs/                                   Governance and adoption guidance
+templates/                              Core and optional-pack consumer templates
+docs/                                   Governance, adoption, and pack guidance
 scripts/                                Local validation and sync helpers
 ```
+
+## Optional packs
+
+The core baseline is suitable for general repository work. Install optional packs only when a consumer needs their capability.
+
+- [Data Analysis Pack](docs/packs/DATA_ANALYSIS_PACK.md): user-facing generic dataset exploration and consequential-analysis safeguards, with reusable request, contract, manifest, and report templates.
 
 ## Consumer model
 
