@@ -1,4 +1,4 @@
-# AI Hub Agent Standards
+# Agent Standards
 
 Versioned, reusable operating standards for repositories that use Claude Code roles and VS Code GitHub Copilot custom-agent orchestration.
 
