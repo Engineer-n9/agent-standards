@@ -2,6 +2,11 @@
 
 All notable changes to this standards kit are recorded here.
 
+## 1.2.0 — 2026-09-10
+
+- Add the optional Cross Repo Std Orchestrator pack for standards governance, drift review, real-run promotion review, release stewardship, and consumer adoption planning.
+- Add a practice-promotion evidence template that separates reusable workflow from consumer-local domain behavior.
+
 ## 1.1.0 — 2026-09-10
 
 - Add the optional Data Analysis Pack: user-facing Data Analyst role, evidence-gated generic analysis skill, Copilot adapter, and reusable analysis templates.

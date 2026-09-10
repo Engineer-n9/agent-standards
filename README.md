@@ -2,7 +2,7 @@
 
 Versioned, reusable operating standards for repositories that use Claude Code roles and VS Code GitHub Copilot custom-agent orchestration.
 
-**Current release:** `1.1.0`
+**Current release:** `1.2.0`
 
 Start with [CLAUDE.md](CLAUDE.md), the operating manual for maintaining this standards repository.
 
@@ -26,6 +26,7 @@ scripts/                                Local validation and sync helpers
 The core baseline is suitable for general repository work. Install optional packs only when a consumer needs their capability.
 
 - [Data Analysis Pack](docs/packs/DATA_ANALYSIS_PACK.md): user-facing generic dataset exploration and consequential-analysis safeguards, with reusable request, contract, manifest, and report templates.
+- [Cross Repo Std Orchestrator](docs/packs/CROSS_REPO_STANDARDS_ORCHESTRATOR.md): user-facing capability stewardship for standards drift, reusable-practice promotion, releases, and consumer adoption.
 
 ## Consumer model
 

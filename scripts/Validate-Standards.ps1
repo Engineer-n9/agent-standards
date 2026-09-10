@@ -18,11 +18,15 @@ $required = @(
     '.claude/skills/source-context-and-artifact-propagation-audit/SKILL.md',
     '.claude/agents/data-analyst.md',
     '.claude/skills/generic-data-analysis/SKILL.md',
+    '.claude/agents/cross-repo-std-orchestrator.md',
+    '.claude/skills/cross-repo-standards-orchestration/SKILL.md',
     '.github/agents/sprint-architect.agent.md',
     '.github/agents/sprint-coder.agent.md',
     '.github/agents/senior-reviewer.agent.md',
     '.github/agents/data-analyst.agent.md',
+    '.github/agents/cross-repo-std-orchestrator.agent.md',
     '.github/skills/generic-data-analysis/SKILL.md',
+    '.github/skills/cross-repo-standards-orchestration/SKILL.md',
     '.github/copilot-instructions.md',
     '.github/ORCHESTRATION_ADDENDUM.md',
     'templates/task_packets/TASK_PACKET.md',
@@ -32,7 +36,9 @@ $required = @(
     'templates/data-analysis/data-contract.md',
     'templates/data-analysis/run-manifest.md',
     'templates/data-analysis/analysis-report.md',
-    'docs/packs/DATA_ANALYSIS_PACK.md'
+    'docs/packs/DATA_ANALYSIS_PACK.md',
+    'templates/cross-repo-standards/PRACTICE_PROMOTION_REVIEW.md',
+    'docs/packs/CROSS_REPO_STANDARDS_ORCHESTRATOR.md'
 )
 
 $missing = $required | Where-Object { -not (Test-Path (Join-Path $Root $_)) }

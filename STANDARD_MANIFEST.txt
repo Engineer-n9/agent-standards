@@ -31,3 +31,11 @@ templates/data-analysis/data-contract.md
 templates/data-analysis/run-manifest.md
 templates/data-analysis/analysis-report.md
 docs/packs/DATA_ANALYSIS_PACK.md
+
+# Optional Cross Repo Std Orchestrator Pack (install for standards ecosystem work).
+.claude/agents/cross-repo-std-orchestrator.md
+.github/agents/cross-repo-std-orchestrator.agent.md
+.claude/skills/cross-repo-standards-orchestration/SKILL.md
+.github/skills/cross-repo-standards-orchestration/SKILL.md
+templates/cross-repo-standards/PRACTICE_PROMOTION_REVIEW.md
+docs/packs/CROSS_REPO_STANDARDS_ORCHESTRATOR.md
