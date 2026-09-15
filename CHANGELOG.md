@@ -2,6 +2,10 @@
 
 All notable changes to this standards kit are recorded here.
 
+## 1.2.1 — 2026-09-15
+
+- Release the existing portable Claude Code instruction wrapper in the standard manifest and document it as the Claude Code entry wrapper.
+
 ## 1.2.0 — 2026-09-10
 
 - Add the optional Cross Repo Std Orchestrator pack for standards governance, drift review, real-run promotion review, release stewardship, and consumer adoption planning.

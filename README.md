@@ -2,7 +2,7 @@
 
 Versioned, reusable operating standards for repositories that use Claude Code roles and VS Code GitHub Copilot custom-agent orchestration.
 
-**Current release:** `1.2.0`
+**Current release:** `1.2.1`
 
 Start with [CLAUDE.md](CLAUDE.md), the operating manual for maintaining this standards repository.
 
@@ -11,6 +11,7 @@ This repository owns generic workflow behavior. It deliberately does **not** own
 ## Standard layout
 
 ```text
+.claude/CLAUDE.md                      Claude Code entry wrapper
 .claude/agents/                         Portable role behavior
 .claude/skills/                         Portable workflow safeguards
 .github/agents/                         Copilot-only adapters
