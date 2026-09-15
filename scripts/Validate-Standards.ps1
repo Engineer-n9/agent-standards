@@ -8,6 +8,7 @@ $required = @(
     'VERSION',
     'README.md',
     'CLAUDE.md',
+    '.claude/CLAUDE.md',
     'CHANGELOG.md',
     '.claude/agents/sprint-architect.md',
     '.claude/agents/sprint-coder.md',
