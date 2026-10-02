@@ -1,5 +1,7 @@
-# Files that form the prepared portable 1.3.0 candidate (not published).
-# Consumers must use a released immutable tag/commit before updating their pin.
+# Files that form portable release version 1.3.0; tag publication is pending.
+# Publication is completed only when immutable remote v1.3.0 exists on the
+# reviewed release merge commit. Consumers must verify that tag and record its
+# exact resolved commit before updating their pin through separate approved adoption.
 # Consumer repositories may add local domain rules, but must record any changed
 # standard-controlled file in Documentation/agent-governance/LOCAL_OVERLAY.md.
 # This repository's CLAUDE.md governs standards maintenance and is not copied

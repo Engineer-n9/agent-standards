@@ -28,11 +28,13 @@ Create a feature branch in the consumer repository. Do not overwrite existing ag
 
 Never use a direct target-branch push for a normal standards rollout.
 
-## Review calibration migration (1.3.0 candidate)
+<a id="review-calibration-migration-130-candidate"></a>
 
-The working 1.3.0 candidate is not published and must not be used to advance a consumer standards pin. After release, select its immutable tag and record the release commit; adoption requires a separate approved consumer packet and review.
+## Review calibration migration (1.3.0)
 
-Reconcile these candidate surfaces against the installed release and local overlay:
+The reviewed 1.3.0 changes are merged and release finalization is user-authorized, but tag publication remains pending. Publication is completed only when the immutable remote `v1.3.0` tag exists on the reviewed release merge commit. Do not advance a consumer standards pin from `VERSION` or a moving branch: verify that tag and record the exact commit it resolves to in `.agent-standards-version`. Adoption requires a separate approved consumer packet and review.
+
+Reconcile these 1.3.0 surfaces against the installed release and local overlay:
 
 - `.claude/agents/senior-reviewer.md` and `.claude/agents/sprint-architect.md` — authoritative portable review behavior and handoffs;
 - `.github/agents/senior-reviewer.agent.md`, `.github/agents/sprint-architect.agent.md` and `.github/ORCHESTRATION_ADDENDUM.md` — thin routing alignment, preserving local model/tool metadata;

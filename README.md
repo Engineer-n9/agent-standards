@@ -2,9 +2,9 @@
 
 Versioned, reusable operating standards for repositories that use Claude Code roles and VS Code GitHub Copilot custom-agent orchestration.
 
-**Current release:** `1.2.1`
+**Release version:** `1.3.0` — publication completed only when the immutable `v1.3.0` tag exists on the reviewed release merge commit in the remote standards repository.
 
-**Prepared candidate:** `1.3.0` — uncommitted working-tree release candidate, not published or authorized for finalization. `VERSION` names the candidate; consumers remain pinned to a released immutable tag/commit until a separately authorized release and adoption.
+**Publication status:** The reviewed 1.3.0 changes are merged and release finalization is user-authorized; tag publication remains pending. `VERSION` records the release version, not proof of publication. Consumers remain pinned to their existing released immutable tag/commit until `v1.3.0` is published and a separate consumer adoption is approved; record the exact commit resolved from that tag when adopting.
 
 Start with [CLAUDE.md](CLAUDE.md), the operating manual for maintaining this standards repository.
 
@@ -43,7 +43,7 @@ A consuming repository installs a pinned copy of this kit and keeps only its dom
 
 Read [Consumer adoption](docs/CONSUMER_ADOPTION.md), [Governance](docs/GOVERNANCE.md), and [Release process](docs/RELEASE_PROCESS.md) before adopting or changing standards.
 
-The backward-compatible 1.3.0 candidate adds [Review calibration](docs/REVIEW_CALIBRATION.md): provenance/impact-based findings, exact scoped handoffs and debt dispositions, bounded correction review, and separate implementation, validation and finalization conclusions. Portable roles remain authoritative, adapters stay thin, and mandatory consumer safeguards are unchanged.
+The backward-compatible 1.3.0 release adds [Review calibration](docs/REVIEW_CALIBRATION.md): provenance/impact-based findings, exact scoped handoffs and debt dispositions, bounded correction review, and separate implementation, validation and finalization conclusions. Portable roles remain authoritative, adapters stay thin, and mandatory consumer safeguards are unchanged.
 
 ## Scope boundary
 
