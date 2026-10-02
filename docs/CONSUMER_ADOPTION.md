@@ -27,3 +27,19 @@ Create a feature branch in the consumer repository. Do not overwrite existing ag
 6. Merge through a PR.
 
 Never use a direct target-branch push for a normal standards rollout.
+
+## Review calibration migration (1.3.0 candidate)
+
+The working 1.3.0 candidate is not published and must not be used to advance a consumer standards pin. After release, select its immutable tag and record the release commit; adoption requires a separate approved consumer packet and review.
+
+Reconcile these candidate surfaces against the installed release and local overlay:
+
+- `.claude/agents/senior-reviewer.md` and `.claude/agents/sprint-architect.md` — authoritative portable review behavior and handoffs;
+- `.github/agents/senior-reviewer.agent.md`, `.github/agents/sprint-architect.agent.md` and `.github/ORCHESTRATION_ADDENDUM.md` — thin routing alignment, preserving local model/tool metadata;
+- `templates/task_packets/TASK_PACKET.md` — additive review boundary, debt disposition and evidence-validity fields for future packets;
+- `docs/REVIEW_CALIBRATION.md` and `STANDARD_MANIFEST.txt` — reusable guidance and its controlled inventory;
+- `docs/CONSUMER_ADOPTION.md`, `README.md`, `VERSION` and `CHANGELOG.md` — adoption/release context, not replacements for the consumer operating manual or pin.
+
+Existing packets remain valid; reconcile missing review inputs explicitly in a bounded handoff rather than rewriting historical sprint records. Preserve consumer operating manuals, domain/data/security controls, validation commands, history, model restrictions, CI/PR protections and stronger local gates. A failed mandatory gate may prevent finalization even when implementation is accepted; this calibration is not permission to weaken it. Any permitted gate exception must name the governing authority, authorized approver, reason, replacement control and bounded scope/duration in the packet/overlay. Without that explicit authority the gate remains binding.
+
+Check the [calibration scenarios](REVIEW_CALIBRATION.md#scenario-checks) against local safeguards during adoption. Copy no repository-local task records into the baseline, and do not overwrite local authority blindly.
