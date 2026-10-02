@@ -1,4 +1,5 @@
-# Files that form the portable 1.2.1 baseline.
+# Files that form the prepared portable 1.3.0 candidate (not published).
+# Consumers must use a released immutable tag/commit before updating their pin.
 # Consumer repositories may add local domain rules, but must record any changed
 # standard-controlled file in Documentation/agent-governance/LOCAL_OVERLAY.md.
 # This repository's CLAUDE.md governs standards maintenance and is not copied
@@ -21,6 +22,9 @@
 .github/skills/planning-package-review/SKILL.md
 .github/skills/evidence-gated-planning/SKILL.md
 .github/skills/source-context-and-artifact-propagation-audit/SKILL.md
+
+# Core reusable review guidance; repository-local task records are excluded.
+docs/REVIEW_CALIBRATION.md
 
 # Optional Data Analysis Pack (install only when the consumer needs it).
 .claude/agents/data-analyst.md

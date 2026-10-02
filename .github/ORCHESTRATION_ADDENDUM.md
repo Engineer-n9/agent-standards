@@ -10,6 +10,12 @@ This is the Copilot-only layer for tool access, worker visibility, model routing
 
 Required flow: architect discovery -> bounded packet -> explicit human approval -> coder -> coder evidence -> reviewer -> integrated verdict.
 
+## Review routing
+
+Route the exact approved packet/revision, baseline/target and candidate range (or identified uncommitted snapshot with staged/unstaged/new files), scope/exclusions, governing requirements, debt dispositions, evidence validity/limitations and review stage to the reviewer. Portable architect and reviewer contracts define calibration; [Review calibration](../docs/REVIEW_CALIBRATION.md) explains it without replacing consumer authority.
+
+Return implementation verdict, validation limitations and finalization readiness separately. Before routing corrections, the architect reconciles findings against the approved contract; a finding is not scope-expansion authority. Correction handoffs identify the prior reviewed candidate, repair delta/dependencies and still-valid evidence. Broader review for drift or material new evidence does not authorize broader implementation. No routing decision silently waives a mandatory gate.
+
 ## Packet modes
 
 Use formal sprint mode when the consumer state authority names or explicitly approves a formal sprint. Use task-packet mode for a bounded task that does not alter formal state. Both modes require allowed/forbidden paths, non-goals, acceptance criteria, validation, constraints, stop conditions, and evidence requirements.

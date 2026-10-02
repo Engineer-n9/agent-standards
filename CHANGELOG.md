@@ -2,6 +2,14 @@
 
 All notable changes to this standards kit are recorded here.
 
+## 1.3.0 — Prepared candidate (2026-10-02; not published)
+
+- Add backward-compatible provenance, scope/authority and impact-based review calibration, with explicit assigned-debt dispositions and bounded correction reviews.
+- Separate implementation acceptance, validation limitations and finalization readiness without weakening mandatory consumer safeguards or granting repair authority from findings.
+- Extend scoped review handoffs and the task-packet template; keep portable roles authoritative and Copilot adapters thin, with model metadata unchanged.
+- Add manifest-controlled review guidance/scenario checks and consumer migration guidance. Existing manifest entries and local authority/history remain preserved.
+- This is an uncommitted working-tree release candidate, not a published release; independent review and separately authorized finalization/release/adoption remain outstanding.
+
 ## 1.2.1 — 2026-09-15
 
 - Release the existing portable Claude Code instruction wrapper in the standard manifest and document it as the Claude Code entry wrapper.
