@@ -20,6 +20,7 @@ Before selecting, resuming, amending, archiving, or activating work:
 ## Packet and approval gates
 
 - Select formal sprint mode or bounded task-packet mode.
+- Only on explicit owner selection, use [small-task mode](../../templates/task_packets/SMALL_TASK_PACKET.md) for localized, reversible work with clear acceptance. Otherwise retain the existing workflow. Record a bounded envelope, not inferred approval from task size.
 - State the goal, exact allowed paths, forbidden paths, non-goals, acceptance criteria, validation, stop conditions, required implementation evidence, and required reviewer evidence.
 - Record review stage and exact baseline/target and candidate range. For uncommitted work, identify the working-tree diff, staged/unstaged and new files, and an evidence snapshot; do not invent a candidate commit. Classify assigned debt as correction, disposition-only, or deferred/excluded with requirement, reason, owner and follow-up where applicable. Deferral is not a gate waiver.
 - If a task relies on unverified external data, a source/schema/unit/context assumption, or a changed persisted artifact, apply the relevant evidence and propagation skills before approval.
@@ -35,10 +36,14 @@ Before selecting, resuming, amending, archiving, or activating work:
 5. A P0/P1 blocker permits only a bounded repair already authorized by the packet or an explicitly approved amendment. Broader work stops for direction. Correction handoffs name the prior reviewed candidate, required corrections, exact repair delta/dependencies and reusable evidence with validity conditions. Respect packet correction-pass limits; material new evidence or scope/target drift must be explained, never used as silent repair authority.
 6. Finalization remains a separate authorization and mandatory-gate decision. Implementation acceptance neither waives consumer gates nor authorizes commit, push, PR, merge or tag.
 
+For new packets without an explicit limit, the default is one implementation repair pass and one delta review. Preserve explicit existing packet limits and stronger consumer controls; do not reinterpret historical approvals. Exhaustion or severe findings require escalation, never automatic extra repair authority.
+
 ## Memory discipline
 
 Do not write candidate assumptions to durable memory. Record only user-approved durable decisions at activation or implementation findings validated at closeout.
 
+Follow explicit state pointers; load relevant role/domain material on demand and reuse unchanged context. Refresh when authority, scope, candidate, target, or relevant evidence conditions change. Update a compact [checkpoint](../../templates/task_packets/EXECUTION_CHECKPOINT.md) in place; keep detailed logs separate and reference rather than duplicate the packet in handoffs. Markdown does not create a continuously running agent or replace approval/durable architectural memory.
+
 ## Broad-scope guard
 
-If more than three implementation files are proposed, require a dependency map: canonical owner, downstream consumers, persisted outputs, intentionally excluded surfaces, validation, and explicit human approval.
+Require a dependency map when work changes shared contracts, persisted formats, domain semantics, external-data access, or multiple independently owned surfaces: canonical owner, downstream consumers, persisted outputs, intentionally excluded surfaces, validation, and explicit human approval. File count alone does not trigger escalation. For localized changes, briefly name the canonical owner and affected consumers. All work still requires approved scope; stronger consumer controls prevail.

@@ -11,7 +11,8 @@ Execute the approved contract precisely. Do not plan, broaden scope, or accept d
 
 1. Read the approved packet and consumer operating manual.
 2. Confirm goal, allowed paths, forbidden paths, non-goals, acceptance criteria, validation, and stop conditions.
-3. Stop if a required field is absent, repository authority conflicts with the packet, or an assumption is unverified.
+3. Stop when missing information or unresolved uncertainty affects authorization, safety, domain correctness, acceptance criteria, or approved scope. Apply established authority precedence; do not invent one.
+4. For non-material administrative omissions, record `not applicable` with a brief reason and continue within the approved contract. Never invent approval, acceptance requirements, or external-data facts.
 
 ## Execution rules
 
@@ -20,6 +21,10 @@ Execute the approved contract precisely. Do not plan, broaden scope, or accept d
 - Preserve behavior outside approved scope.
 - Add focused regression coverage needed to prove an approved behavioral change. If a necessary test location is absent, report a scope discovery rather than omitting proof.
 - Follow consumer-local data, security, destructive-operation, and validation constraints.
+- In explicitly selected small-task mode, approval covers tactics within the bounded envelope, including related tests in an explicitly approved test area. New capabilities, domain assumptions, or work outside it require approval.
+- Use affected checks for development feedback; mandatory consumer commit gates remain required before committing. Evidence reuse requires governing permission and unchanged relevant candidate, configuration, environment, dependencies, and inputs.
+- For new packets without an explicit limit, allow one implementation repair pass and one delta review. Existing explicit packet limits and stronger consumer controls prevail; exhaustion or severe findings require escalation, not extra authority or a gate waiver.
+- Maintain a compact [execution checkpoint](../../templates/task_packets/EXECUTION_CHECKPOINT.md); it references approval, never supplies it. Follow explicit state pointers and refresh context on authority, scope, candidate, target, or relevant evidence drift.
 
 ## Scope discovery
 

@@ -1,7 +1,7 @@
-# Files that form portable release version 1.3.0; tag publication is pending.
-# Publication is completed only when immutable remote v1.3.0 exists on the
-# reviewed release merge commit. Consumers must verify that tag and record its
-# exact resolved commit before updating their pin through separate approved adoption.
+# Files that form portable candidate version 1.4.0; not published.
+# Published v1.3.0 resolves to d2fd121b1c7314ad14a9ad521a6ce3fe7df27f45.
+# Candidate metadata is not publication evidence. Consumers verify a released
+# immutable tag/commit before separately approved adoption.
 # Consumer repositories may add local domain rules, but must record any changed
 # standard-controlled file in Documentation/agent-governance/LOCAL_OVERLAY.md.
 # This repository's CLAUDE.md governs standards maintenance and is not copied
@@ -27,6 +27,10 @@
 
 # Core reusable review guidance; repository-local task records are excluded.
 docs/REVIEW_CALIBRATION.md
+docs/BOUNDED_EXECUTION.md
+templates/task_packets/TASK_PACKET.md
+templates/task_packets/SMALL_TASK_PACKET.md
+templates/task_packets/EXECUTION_CHECKPOINT.md
 
 # Optional Data Analysis Pack (install only when the consumer needs it).
 .claude/agents/data-analyst.md

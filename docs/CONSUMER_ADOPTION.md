@@ -32,7 +32,7 @@ Never use a direct target-branch push for a normal standards rollout.
 
 ## Review calibration migration (1.3.0)
 
-The reviewed 1.3.0 changes are merged and release finalization is user-authorized, but tag publication remains pending. Publication is completed only when the immutable remote `v1.3.0` tag exists on the reviewed release merge commit. Do not advance a consumer standards pin from `VERSION` or a moving branch: verify that tag and record the exact commit it resolves to in `.agent-standards-version`. Adoption requires a separate approved consumer packet and review.
+The immutable remote `v1.3.0` tag is verified published on 2026-10-06: annotated object `3cd0131ae61743d5842278246de0d14c2fb08c8a` resolves to `d2fd121b1c7314ad14a9ad521a6ce3fe7df27f45`. Do not advance a consumer standards pin from `VERSION` or a moving branch: verify the released tag and record its exact resolved commit in `.agent-standards-version`. Adoption requires a separate approved consumer packet and review.
 
 Reconcile these 1.3.0 surfaces against the installed release and local overlay:
 
@@ -45,3 +45,9 @@ Reconcile these 1.3.0 surfaces against the installed release and local overlay:
 Existing packets remain valid; reconcile missing review inputs explicitly in a bounded handoff rather than rewriting historical sprint records. Preserve consumer operating manuals, domain/data/security controls, validation commands, history, model restrictions, CI/PR protections and stronger local gates. A failed mandatory gate may prevent finalization even when implementation is accepted; this calibration is not permission to weaken it. Any permitted gate exception must name the governing authority, authorized approver, reason, replacement control and bounded scope/duration in the packet/overlay. Without that explicit authority the gate remains binding.
 
 Check the [calibration scenarios](REVIEW_CALIBRATION.md#scenario-checks) against local safeguards during adoption. Copy no repository-local task records into the baseline, and do not overwrite local authority blindly.
+
+## Bounded execution migration (1.4.0 candidate)
+
+1.4.0 is not published; do not adopt a moving candidate or change pins from metadata alone. After reviewed publication, use a separately approved consumer adoption packet to reconcile the changed portable roles/skills, thin routing, task templates, [bounded guidance](BOUNDED_EXECUTION.md), calibration and manifest.
+
+The impact trigger replaces the shared three-file count by default; stronger local mapping requirements remain. Material stops retain authorization, safety, domain correctness, scope and acceptance safeguards. Small-task mode is opt-in only; without explicit owner selection retain existing workflow. The one-repair-plus-delta-review default applies only to new packets without explicit limits; preserve existing approvals, historical packets, local limits and stronger gates. Compact checkpoints reference existing authority and exact evidence, not new authority or runtime execution. Consumer validation commands, finalization sequencing, optional pack behavior, model/tool metadata and protected-target controls are unchanged. Walk through the policy scenarios before adoption; no consumer work is authorized by the standards release packet.

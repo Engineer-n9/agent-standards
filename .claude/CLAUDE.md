@@ -20,7 +20,7 @@ Use the existing role definitions and skills for their stated scopes:
 
 The required delivery flow remains architect discovery -> bounded packet -> explicit human approval -> coder -> coder evidence -> reviewer -> integrated verdict. Use the Data Analyst and Cross-Repo Standards Orchestrator roles only for their applicable existing skill scopes; do not bypass the approved-packet workflow for implementation work.
 
-If the local authority, packet, current code, external-system evidence, or this adapter conflicts, stop and report the conflict. Do not guess or silently expand scope.
+If the local authority, packet, current code, external-system evidence, or this adapter differs, apply explicit authority precedence where it resolves the discrepancy and report resolved discrepancies or stale lower-priority text. Stop and report unresolved conflicts materially affecting authorization, safety, scope, domain correctness, or acceptance. A code/requirement difference may be the approved defect, not automatically an instruction conflict. Never invent facts, approval, or authority precedence, guess, or silently expand scope.
 
 ## Runtime note
 

@@ -37,3 +37,7 @@ These are policy walkthroughs, not runtime-enforcement tests. Each assumes the s
 ## Adoption boundary
 
 See [Consumer adoption](CONSUMER_ADOPTION.md#review-calibration-migration-130-candidate). Reconcile stronger local safeguards rather than replace them; use a released immutable tag/commit before changing a consumer pin. Working-tree release metadata is not publication evidence.
+
+## Bounded execution compatibility
+
+See [bounded execution scenarios](BOUNDED_EXECUTION.md#policy-scenarios). New-packet repair defaults never reinterpret historical approvals or explicit limits; stronger consumer safeguards prevail. Small-task mode needs explicit selection and retains independent review/publication boundaries. Concise references may replace duplicated tables only when no debt or evidence-reuse qualification applies. Input drift invalidates relevant evidence just as target/configuration/environment drift does. Budget exhaustion or severe findings escalate, not suppress defects or expand repair authority.

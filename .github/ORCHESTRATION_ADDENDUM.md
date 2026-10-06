@@ -4,7 +4,7 @@ This is the Copilot-only layer for tool access, worker visibility, model routing
 
 ## Roles
 
-- **Sprint Architect** is the only user-facing Copilot agent. It may create or amend packet Markdown only.
+- **Sprint Architect** is the core workflow's user-facing Copilot orchestrator. It may create or amend packet Markdown only. Existing optional user-facing packs retain their own applicable scopes and behavior.
 - **Sprint Coder** is hidden, implements only an approved packet, validates it, and returns evidence.
 - **Senior Reviewer** is hidden and read-only. It reviews actual approved output, diff, and evidence.
 
@@ -19,6 +19,8 @@ Return implementation verdict, validation limitations and finalization readiness
 ## Packet modes
 
 Use formal sprint mode when the consumer state authority names or explicitly approves a formal sprint. Use task-packet mode for a bounded task that does not alter formal state. Both modes require allowed/forbidden paths, non-goals, acceptance criteria, validation, constraints, stop conditions, and evidence requirements.
+
+Only on explicit owner selection, route localized, reversible work with clear acceptance through the [small-task envelope](../templates/task_packets/SMALL_TASK_PACKET.md). Otherwise retain the existing modes. Portable roles define tactical freedom, impact mapping, material stops, and new-packet repair defaults; stronger local controls and existing explicit limits prevail. Independent review and publication authorization remain required. Use compact checkpoint references without duplicating packet tables when no debt/evidence-reuse qualification applies.
 
 ## Boundaries
 

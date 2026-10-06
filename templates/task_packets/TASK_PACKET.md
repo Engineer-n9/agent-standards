@@ -62,7 +62,16 @@ For reused evidence, identify its original candidate and justify validity for th
 
 ## Stop conditions
 
-- <condition requiring a packet amendment or human direction>
+- <material uncertainty affecting authorization, safety, domain correctness, scope, or acceptance; required amendment or human direction>
+- Non-material administrative omissions: record `not applicable` with reason; never invent approval, requirements, or external-data facts.
+
+## Execution budget and checkpoint
+
+- New-packet default without an explicit limit: one implementation repair pass and one delta review. Explicit packet limits and stronger consumer controls prevail; existing approvals are not reinterpreted.
+- Exhaustion or severe findings: report unresolved material findings and escalate; no automatic extra repair authority or gate waiver.
+- Update the [execution checkpoint](EXECUTION_CHECKPOINT.md) in place; reference this approved packet rather than duplicate it. Detailed logs remain separate.
+- Run affected development checks; mandatory consumer pre-commit gates still apply. Reuse evidence only where policy permits and relevant candidate, configuration, environment, dependencies, and inputs remain valid.
+- Independent review of the exact candidate precedes publication; acceptance never authorizes commit, push, PR, merge, or tag.
 
 ## Required implementation evidence
 
@@ -77,4 +86,4 @@ For reused evidence, identify its original candidate and justify validity for th
 ## Approval
 
 - Approved by: `<name>`
-- Approval timestamp: `<ISO 8601 timestamp with timezone>`
+- Approval date/time: `<as actually supplied; record date only if exact time/timezone is unknown>`

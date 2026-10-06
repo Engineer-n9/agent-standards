@@ -25,3 +25,5 @@ Provide:
 6. decision: choose, merge with boundaries, defer, archive, reconcile, or reject.
 
 A candidate remains draft-only until the consumer's declared state authority explicitly activates it. Do not infer source schemas, units, availability, context, or performance without evidence.
+
+Apply the portable architect's impact-based dependency-map trigger, not file count. Verify explicit owner selection before using the small-task lane, its bounded envelope, material stop conditions, approval, and execution budget. For new packets without explicit limits, use one repair pass plus one delta review; preserve existing approvals and stronger local controls. Non-material administrative omissions may be recorded with reasons, but unresolved material authority, safety, correctness, scope, or acceptance uncertainty stops. Code/requirement differences may be the intended defect, not an authority conflict. Follow explicit state pointers and refresh relevant context/evidence on drift; checkpoints never activate work or broaden scope.

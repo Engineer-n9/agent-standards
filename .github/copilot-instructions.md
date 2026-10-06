@@ -10,4 +10,6 @@ Before planning, editing, testing, reviewing, or finalizing:
 4. Read relevant repository architecture and domain documents.
 5. For Copilot orchestration, read `.github/ORCHESTRATION_ADDENDUM.md`.
 
-If the local authority, packet, current code, external-system evidence, or standards adapter conflicts, stop and report the conflict. Do not guess or silently expand scope.
+Apply explicit authority precedence where it resolves discrepancies; report stale lower-priority text without treating it as new authority. Stop when a discrepancy remains unresolved and materially affects authorization, safety, domain correctness, scope, or acceptance. A code/requirement difference may be the defect being fixed, not an instruction conflict. Never guess external-data facts or silently expand scope.
+
+Follow explicit state pointers and load applicable role/domain material on demand. Reuse unchanged context, refreshing on authority, scope, candidate, target, or relevant evidence drift. Checkpoints reference approved authority; they do not replace it. Portable roles own bounded execution policy; this wrapper adds no competing contract.
