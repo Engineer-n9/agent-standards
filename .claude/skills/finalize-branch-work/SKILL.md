@@ -9,9 +9,11 @@ description: Finalize reviewed work through the consumer repository's normal fea
 
 1. Read the consumer operating manual and local overlay.
 2. Fetch `origin`; compare the working branch, local target, and `origin/<default branch>`.
-3. Run validation relevant to the actual diff.
+3. Run mandatory pre-commit gates defined by consumer authority. Affected development checks do not replace them. Reuse successful evidence only where policy permits and relevant candidate, configuration, environment, dependencies, and inputs remain valid; refresh invalidated checks.
 4. Commit only intended changes, push the non-target feature branch, create or update the PR, and obtain required review.
 5. Return branch, commit, PR, validation, and review evidence.
+
+Implementation acceptance grants no commit, push, PR, merge, or tag authorization. Obtain separate finalization authority and independent review of the exact candidate before publication; after repairs, review the delta and affected dependencies. Consumer policy still defines mandatory commands and sequencing; this contract does not consolidate or weaken local gates.
 
 ## Exceptional direct-target authorization
 

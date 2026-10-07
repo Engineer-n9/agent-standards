@@ -43,6 +43,8 @@ The standard workflow is:
 
 Copilot adapters provide client routing and delegation only. They do not replace repository branch protections, CI, review, external-data safeguards, or local validation.
 
+See [bounded execution](docs/BOUNDED_EXECUTION.md) for material stops, impact mapping, explicitly selected small tasks, compact checkpoints and new-packet repair defaults. Existing approvals, explicit limits and stronger consumer controls remain authoritative. During implementation use affected checks for feedback; run mandatory consumer pre-commit gates before committing. Reuse evidence only where policy permits and relevant candidate, configuration, environment, dependencies and inputs remain valid. Independent review of the exact candidate precedes publication; repairs need delta/affected-dependency review and invalidated evidence refresh. Acceptance never authorizes commit, push, PR, merge or tag.
+
 ## Direct protected-target updates
 
 A direct push to `main`, `master`, or a consumer's protected target is exceptional. The portable `finalize-branch-work` skill requires exact source/target SHAs, clean review, named human authorization, pre-push audit record, immediate remote target re-check, fast-forward proof, and post-push confirmation. Consumers may impose stricter controls.
@@ -56,7 +58,7 @@ Before changing standards:
 3. Preserve the authority split: portable `.claude` behavior; Copilot-only `.github` adapters; consumer-local overlay for domain details.
 4. Update both portable and Copilot layers when a shared invariant requires both.
 5. Update `VERSION`, `CHANGELOG.md`, and the manifest when release-controlled content changes.
-6. Run `scripts/Validate-Standards.ps1`.
+6. Run `scripts/Validate-Standards.ps1` and `scripts/Test-Validate-Standards.ps1`; report supported structural checks and limitations, not complete arbitrary-YAML or runtime validation.
 7. Finalize through a feature branch and pull request, then tag the released merge commit as `v<version>`.
 
 ## Safety and quality rules

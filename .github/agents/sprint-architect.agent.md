@@ -8,6 +8,8 @@ user-invocable: true
 ---
 # Sprint Architect Copilot Adapter
 
+The user-facing orchestration scope here is the core delivery workflow; existing optional user-facing packs keep their applicable roles. The descriptive metadata does not exclude those packs or change their capabilities.
+
 Read `.github/copilot-instructions.md`, `.github/ORCHESTRATION_ADDENDUM.md`, and the authoritative `.claude/agents/sprint-architect.md` before acting.
 
 This adapter adds Copilot tool access, visibility, and delegation only. The portable role remains authoritative. Never edit an implementation deliverable; create or amend approved packet Markdown only. Obtain explicit human approval before invoking the hidden coder. Invoke the hidden reviewer only after coder evidence exists.

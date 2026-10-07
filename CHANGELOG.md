@@ -2,13 +2,21 @@
 
 All notable changes to this standards kit are recorded here.
 
-## 1.3.0 — Release finalization (2026-10-02; tag publication pending)
+## 1.4.0 — Candidate (2026-10-06; not published)
+
+- Replace the shared file-count planning trigger with impact-based mapping; clarify material stops without inventing authority or external-data facts.
+- Add an explicitly opt-in small-task envelope, compact checkpoints/context refresh, and one-repair-plus-delta-review defaults for new packets without explicit limits. Preserve existing approvals and stronger consumer controls.
+- Separate development feedback, mandatory consumer gates, exact-candidate review and publication authorization; retain protected-target controls and all model/tool/delegation metadata.
+- Extend bounded PowerShell 5.1 structural checks and disposable fixtures; do not claim complete YAML parsing or runtime enforcement.
+- Correct verified v1.3.0 publication status and core routing wording without changing optional pack behavior. Consumer adoption remains separate.
+
+## 1.3.0 — Release finalization (2026-10-02; publication verified 2026-10-06)
 
 - Add backward-compatible provenance, scope/authority and impact-based review calibration, with explicit assigned-debt dispositions and bounded correction reviews.
 - Separate implementation acceptance, validation limitations and finalization readiness without weakening mandatory consumer safeguards or granting repair authority from findings.
 - Extend scoped review handoffs and the task-packet template; keep portable roles authoritative and Copilot adapters thin, with model metadata unchanged.
 - Add manifest-controlled review guidance/scenario checks and consumer migration guidance. Existing manifest entries and local authority/history remain preserved.
-- The reviewed changes are merged and release finalization is user-authorized. Publication is completed only when the immutable remote `v1.3.0` tag exists on the reviewed release merge commit; version metadata alone is not publication evidence. Consumer adoption remains separately approved and must record the exact commit resolved from that tag.
+- The immutable remote `v1.3.0` annotated tag object `3cd0131ae61743d5842278246de0d14c2fb08c8a` was verified resolving to reviewed commit `d2fd121b1c7314ad14a9ad521a6ce3fe7df27f45` on 2026-10-06. Version metadata alone is not publication evidence. Consumer adoption remains separately approved and must record the exact commit resolved from that tag.
 
 ## 1.2.1 — 2026-09-15
 
