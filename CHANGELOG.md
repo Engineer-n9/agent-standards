@@ -2,6 +2,14 @@
 
 All notable changes to this standards kit are recorded here.
 
+## 1.4.1 — Candidate (2026-10-07; review/publication pending)
+
+- Align core worker declared names with the Architect's exact allowlist identifiers; preserve model preferences, tools, visibility and delegation flags.
+- Clarify canonical capability-aware Copilot routing: registered workers preferred; generic role-guided fallback only where runtime permission and required controls allow it. Markdown cannot bypass runtime allowlists or apply model/tool frontmatter.
+- Separate explicit model requirements from registration and ordinary first-available preferences; prohibit silent substitution and disclose unverified selection/instruction-only controls.
+- Add concise routing/handoff scenarios, manifest inventory, migration guidance and PowerShell 5.1 name/allowlist regression fixtures alongside existing coverage. Structural checks do not prove runtime capabilities.
+- No portable Claude workflow, optional-pack behavior or consumer changes. Published v1.4.0 provenance below is retained; this candidate does not authorize publication or adoption.
+
 ## 1.4.0 — Released (publication verified 2026-10-07)
 
 - Replace the shared file-count planning trigger with impact-based mapping; clarify material stops without inventing authority or external-data facts.
