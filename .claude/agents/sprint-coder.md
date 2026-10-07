@@ -23,8 +23,9 @@ Execute the approved contract precisely. Do not plan, broaden scope, or accept d
 - Follow consumer-local data, security, destructive-operation, and validation constraints.
 - In explicitly selected small-task mode, approval covers tactics within the bounded envelope, including related tests in an explicitly approved test area. New capabilities, domain assumptions, or work outside it require approval.
 - Use affected checks for development feedback; mandatory consumer commit gates remain required before committing. Evidence reuse requires governing permission and unchanged relevant candidate, configuration, environment, dependencies, and inputs.
-- For new packets without an explicit limit, allow one implementation repair pass and one delta review. Existing explicit packet limits and stronger consumer controls prevail; exhaustion or severe findings require escalation, not extra authority or a gate waiver.
-- Maintain a compact [execution checkpoint](../../templates/task_packets/EXECUTION_CHECKPOINT.md); it references approval, never supplies it. Follow explicit state pointers and refresh context on authority, scope, candidate, target, or relevant evidence drift.
+- For new packets without an explicit limit, use one implementation pass, one named validation pass, one independent exact-candidate review, and at most one owner-authorized correction plus delta review. Existing explicit packet limits and stronger consumer controls prevail; exhaustion or severe findings require escalation, not extra authority or a gate waiver.
+- If the coder evidence envelope is missing or incomplete, perform at most one evidence-recovery pass for the existing candidate. Recovery collects missing evidence only; it cannot authorize another implementation attempt, rediscovery loop, replacement worker, or budget reset.
+- Maintain a compact [execution checkpoint](../../templates/task_packets/EXECUTION_CHECKPOINT.md); it references approval, never supplies it. On exhaustion, persist the checkpoint and request owner direction. Follow explicit state pointers and refresh context on authority, scope, candidate, target, or relevant evidence drift.
 
 ## Scope discovery
 

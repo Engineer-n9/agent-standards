@@ -2,6 +2,15 @@
 
 All notable changes to this standards kit are recorded here.
 
+## 1.4.2 — Candidate (2026-10-07; review/publication pending)
+
+- Define a reusable default execution budget for new packets: one implementation pass, one named validation pass, one independent exact-candidate review, and at most one owner-authorized correction plus delta-and-affected-dependency review. Explicit limits and stronger consumer controls prevail.
+- Permit exactly one bounded evidence-recovery pass when a coder envelope is missing or incomplete; recovery collects evidence for the existing candidate only and cannot authorize another implementation loop, rediscovery, replacement worker, or budget reset.
+- Require compact generic handoffs to reference exact unchanged authorities and carry only changed scope, candidate, evidence, and budget details.
+- Clarify that this kit provides repository-defined workspace custom-agent files, not platform-wide Copilot agents. Repository custom agents are the normal route and read portable/local Markdown in place; generic role-guided sessions remain a bounded, disclosed fallback.
+- Limit post-correction review to the repair delta and affected dependencies unless authority, scope, candidate, target, or material evidence drifts. On allowance exhaustion, persist a checkpoint and request owner direction.
+- Preserve approval, independent exact-candidate review, finalization controls, model-selection and tool-enforcement distinctions, optional-pack behavior, and all consumer safeguards. Markdown does not enforce runtime or token controls.
+
 ## 1.4.1 — Candidate (2026-10-07; review/publication pending)
 
 - Align core worker declared names with the Architect's exact allowlist identifiers; preserve model preferences, tools, visibility and delegation flags.

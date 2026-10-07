@@ -2,7 +2,7 @@
 
 Versioned, reusable operating standards for repositories that use Claude Code roles and VS Code GitHub Copilot custom-agent orchestration.
 
-**Candidate version:** `1.4.1` — implementation candidate; independent review and publication authorization remain pending. Consumer adoption remains separate.
+**Candidate version:** `1.4.2` — implementation candidate; independent review and publication authorization remain pending. Consumer adoption remains separate.
 
 **Publication status:** The remote `v1.4.0` annotated tag object `0124ee1bd4aeb04ea91931c5ec9ea034b7ba49d3` was verified on 2026-10-07 resolving to `3f09b67f79281afc6263bf94e207593e3760da15`. Its immutable tagged bytes retain pre-publication prose; this subsequent documentation-branch correction does not change the tag or pinned release payload. Historically, `v1.3.0` is verified published: annotated tag object `3cd0131ae61743d5842278246de0d14c2fb08c8a` resolves to `d2fd121b1c7314ad14a9ad521a6ce3fe7df27f45`. Consumers stay pinned to a released immutable tag/commit until separately approved adoption; `VERSION` alone never authorizes a pin change.
 
@@ -47,7 +47,9 @@ The backward-compatible 1.3.0 release adds [Review calibration](docs/REVIEW_CALI
 
 The 1.4.0 release adds [Bounded execution](docs/BOUNDED_EXECUTION.md): impact-based mapping, material stops, explicit opt-in small tasks, new-packet repair defaults, compact checkpoints, and bounded PowerShell 5.1 structural fixtures. Existing approvals, explicit limits, optional packs and stronger consumer controls remain unchanged. Run both `scripts/Validate-Standards.ps1` and `scripts/Test-Validate-Standards.ps1`; supported checks and limitations are documented in that guidance.
 
-The 1.4.1 candidate corrects core worker names and clarifies [delegation routing](docs/DELEGATION_ROUTING.md): registered identifiers preferred, generic role-guided fallback only where available/permitted and required controls survive. Registration, model selection and tool enforcement are distinct; Markdown cannot bypass runtime allowlists or apply frontmatter. Model preferences, tools, visibility, delegation flags, optional packs and portable Claude handoffs are unchanged. The published 1.4.0 facts above remain historical provenance, not 1.4.1 publication evidence.
+The 1.4.1 candidate corrects core worker names and clarifies [delegation routing](docs/DELEGATION_ROUTING.md): registered identifiers preferred, generic role-guided fallback only where available/permitted and required controls survive. Registration, model selection and tool enforcement are distinct; Markdown cannot bypass runtime allowlists or apply frontmatter. Model preferences, tools, visibility, delegation flags, optional packs and portable Claude handoffs are unchanged.
+
+The 1.4.2 candidate adds an explicit [execution and evidence-recovery budget](docs/BOUNDED_EXECUTION.md): one bounded evidence-recovery pass for a missing coder envelope, compact exact-authority handoffs, delta-and-affected-dependency correction review, and checkpoint-based escalation when allowance is exhausted. It clarifies that repository-defined workspace custom agents are the normal Copilot route and that generic role-guided sessions are a bounded fallback. It does not enforce token accounting, spawn workers, alter model/tool runtime enforcement, weaken approvals, or change consumer safeguards. The published 1.4.0 facts above remain historical provenance, not 1.4.2 publication evidence.
 
 ## Scope boundary
 
