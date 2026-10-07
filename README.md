@@ -2,9 +2,9 @@
 
 Versioned, reusable operating standards for repositories that use Claude Code roles and VS Code GitHub Copilot custom-agent orchestration.
 
-**Candidate version:** `1.4.0` — working-tree metadata is not publication evidence; independent review, merge and tag remain separate.
+**Release version:** `1.4.0` — publication verified on 2026-10-07; consumer adoption remains separate.
 
-**Publication status:** `v1.3.0` is verified published: annotated tag object `3cd0131ae61743d5842278246de0d14c2fb08c8a` resolves to `d2fd121b1c7314ad14a9ad521a6ce3fe7df27f45`. No remote `v1.4.0` tag was observed on 2026-10-06. Consumers stay pinned to a released immutable tag/commit until separately approved adoption; `VERSION` alone never authorizes a pin change.
+**Publication status:** The remote `v1.4.0` annotated tag object `0124ee1bd4aeb04ea91931c5ec9ea034b7ba49d3` was verified on 2026-10-07 resolving to `3f09b67f79281afc6263bf94e207593e3760da15`. Its immutable tagged bytes retain pre-publication prose; this subsequent documentation-branch correction does not change the tag or pinned release payload. Historically, `v1.3.0` is verified published: annotated tag object `3cd0131ae61743d5842278246de0d14c2fb08c8a` resolves to `d2fd121b1c7314ad14a9ad521a6ce3fe7df27f45`. Consumers stay pinned to a released immutable tag/commit until separately approved adoption; `VERSION` alone never authorizes a pin change.
 
 Start with [CLAUDE.md](CLAUDE.md), the operating manual for maintaining this standards repository.
 
@@ -45,7 +45,7 @@ Read [Consumer adoption](docs/CONSUMER_ADOPTION.md), [Governance](docs/GOVERNANC
 
 The backward-compatible 1.3.0 release adds [Review calibration](docs/REVIEW_CALIBRATION.md): provenance/impact-based findings, exact scoped handoffs and debt dispositions, bounded correction review, and separate implementation, validation and finalization conclusions. Portable roles remain authoritative, adapters stay thin, and mandatory consumer safeguards are unchanged.
 
-The 1.4.0 candidate adds [Bounded execution](docs/BOUNDED_EXECUTION.md): impact-based mapping, material stops, explicit opt-in small tasks, new-packet repair defaults, compact checkpoints, and bounded PowerShell 5.1 structural fixtures. Existing approvals, explicit limits, optional packs and stronger consumer controls remain unchanged. Run both `scripts/Validate-Standards.ps1` and `scripts/Test-Validate-Standards.ps1`; supported checks and limitations are documented in that guidance.
+The 1.4.0 release adds [Bounded execution](docs/BOUNDED_EXECUTION.md): impact-based mapping, material stops, explicit opt-in small tasks, new-packet repair defaults, compact checkpoints, and bounded PowerShell 5.1 structural fixtures. Existing approvals, explicit limits, optional packs and stronger consumer controls remain unchanged. Run both `scripts/Validate-Standards.ps1` and `scripts/Test-Validate-Standards.ps1`; supported checks and limitations are documented in that guidance.
 
 ## Scope boundary
 

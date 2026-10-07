@@ -2,13 +2,14 @@
 
 All notable changes to this standards kit are recorded here.
 
-## 1.4.0 — Candidate (2026-10-06; not published)
+## 1.4.0 — Released (publication verified 2026-10-07)
 
 - Replace the shared file-count planning trigger with impact-based mapping; clarify material stops without inventing authority or external-data facts.
 - Add an explicitly opt-in small-task envelope, compact checkpoints/context refresh, and one-repair-plus-delta-review defaults for new packets without explicit limits. Preserve existing approvals and stronger consumer controls.
 - Separate development feedback, mandatory consumer gates, exact-candidate review and publication authorization; retain protected-target controls and all model/tool/delegation metadata.
 - Extend bounded PowerShell 5.1 structural checks and disposable fixtures; do not claim complete YAML parsing or runtime enforcement.
 - Correct verified v1.3.0 publication status and core routing wording without changing optional pack behavior. Consumer adoption remains separate.
+- The remote `v1.4.0` annotated tag object `0124ee1bd4aeb04ea91931c5ec9ea034b7ba49d3` was verified on 2026-10-07 resolving to `3f09b67f79281afc6263bf94e207593e3760da15`. Its immutable tagged bytes retain pre-publication prose; this subsequent documentation-branch correction does not change the tag or pinned release payload. Consumer adoption remains separately approved.
 
 ## 1.3.0 — Release finalization (2026-10-02; publication verified 2026-10-06)
 

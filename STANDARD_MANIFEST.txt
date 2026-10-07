@@ -1,6 +1,10 @@
-# Files that form portable candidate version 1.4.0; not published.
+# Files that form portable release version 1.4.0; publication verified 2026-10-07.
+# Remote v1.4.0 annotated object 0124ee1bd4aeb04ea91931c5ec9ea034b7ba49d3
+# resolves to 3f09b67f79281afc6263bf94e207593e3760da15.
+# Immutable tagged bytes retain pre-publication prose; this subsequent docs-branch
+# correction does not change the tag or pinned release payload.
 # Published v1.3.0 resolves to d2fd121b1c7314ad14a9ad521a6ce3fe7df27f45.
-# Candidate metadata is not publication evidence. Consumers verify a released
+# Version metadata is not publication evidence. Consumers verify a released
 # immutable tag/commit before separately approved adoption.
 # Consumer repositories may add local domain rules, but must record any changed
 # standard-controlled file in Documentation/agent-governance/LOCAL_OVERLAY.md.
