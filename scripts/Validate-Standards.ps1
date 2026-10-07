@@ -36,6 +36,7 @@ $required = @(
     'templates/task_packets/EXECUTION_CHECKPOINT.md',
     'docs/BOUNDED_EXECUTION.md',
     'docs/REVIEW_CALIBRATION.md',
+    'docs/DELEGATION_ROUTING.md',
     'templates/direct_push_authorizations/DIRECT_PUSH_AUTHORIZATION.md',
     'templates/LOCAL_OVERLAY.md',
     'templates/data-analysis/analysis-request.md',
@@ -102,7 +103,14 @@ foreach ($worker in @('sprint-coder', 'senior-reviewer')) {
     }
 }
 $architect = $headers[(Join-Path $Root '.github/agents/sprint-architect.agent.md')]
-if ($architect['user-invocable'] -ne 'true' -or $architect['agents'] -notmatch '^\[\s*sprint-coder\s*,\s*senior-reviewer\s*\]$') { throw 'Invalid core architect delegation metadata.' }
+if ($architect['user-invocable'] -ne 'true' -or $architect['agents'] -cnotmatch '^\[\s*sprint-coder\s*,\s*senior-reviewer\s*\]$') { throw 'Invalid core architect delegation metadata.' }
+# Exact core identifiers only; accept bounded bare or paired-quoted name scalars.
+# This proves structural alignment, not runtime registration or discovery.
+foreach ($worker in @('sprint-coder', 'senior-reviewer')) {
+    $fields = $headers[(Join-Path $Root ".github/agents/$worker.agent.md")]
+    $namePattern = '^(?:' + [regex]::Escape($worker) + '|"' + [regex]::Escape($worker) + '"|''' + [regex]::Escape($worker) + ''')$'
+    if ($fields['name'] -cnotmatch $namePattern) { throw "Core worker name/allowlist mismatch: $worker" }
+}
 
 # Supported inline Markdown links outside fenced blocks; validate file targets,
 # not anchors, reference-style links, arbitrary Markdown, or external URLs.
@@ -152,4 +160,4 @@ foreach ($check in @(
 }
 if (@($states | Sort-Object -Unique).Count -ne 1) { throw 'Mixed candidate/released metadata states.' }
 Write-Output "Standards validation passed for version $version ($($states[0]) metadata only; remote publication not verified)."
-Write-Output 'Supported: required inventory; manifest existence/duplicates/bounds; bounded frontmatter; inline local file links; coherent candidate/released metadata versions/states; core delegation. Not full YAML/Markdown, remote publication, client enforcement, or runtime validation.'
+Write-Output 'Supported: required inventory; manifest existence/duplicates/bounds; bounded frontmatter; inline local file links; coherent candidate/released metadata versions/states; core delegation names/allowlist. Not full YAML/Markdown, remote publication, runtime discovery/model availability, client enforcement, or runtime validation.'

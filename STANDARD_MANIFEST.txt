@@ -1,4 +1,5 @@
-# Files that form portable release version 1.4.0; publication verified 2026-10-07.
+# Files that form portable candidate version 1.4.1; review/publication pending.
+# Historical v1.4.0 publication verified 2026-10-07:
 # Remote v1.4.0 annotated object 0124ee1bd4aeb04ea91931c5ec9ea034b7ba49d3
 # resolves to 3f09b67f79281afc6263bf94e207593e3760da15.
 # Immutable tagged bytes retain pre-publication prose; this subsequent docs-branch
@@ -32,6 +33,7 @@
 # Core reusable review guidance; repository-local task records are excluded.
 docs/REVIEW_CALIBRATION.md
 docs/BOUNDED_EXECUTION.md
+docs/DELEGATION_ROUTING.md
 templates/task_packets/TASK_PACKET.md
 templates/task_packets/SMALL_TASK_PACKET.md
 templates/task_packets/EXECUTION_CHECKPOINT.md

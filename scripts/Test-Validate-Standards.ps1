@@ -70,6 +70,12 @@ try {
     Test-Case 'worker-delegation' { param($f) Replace-FixtureText $f '.github/agents/sprint-coder.agent.md' 'disable-model-invocation: false' 'disable-model-invocation: true' } 'Hidden worker lacks explicit delegation'
     Test-Case 'body-not-metadata' { param($f) Replace-FixtureText $f '.github/agents/sprint-coder.agent.md' 'disable-model-invocation: false' '# removed'; Add-Content -LiteralPath (Join-Path $f '.github/agents/sprint-coder.agent.md') -Value 'disable-model-invocation: false' } 'Hidden worker lacks explicit delegation'
     Test-Case 'architect-delegation' { param($f) Replace-FixtureText $f '.github/agents/sprint-architect.agent.md' 'agents: [sprint-coder, senior-reviewer]' 'agents: [sprint-coder]' } 'Invalid core architect delegation'
+    Test-Case 'positive-core-identifiers' { param($f) } $null
+    Test-Case 'positive-bare-identifiers' { param($f) Replace-FixtureText $f '.github/agents/sprint-coder.agent.md' 'name: "sprint-coder"' 'name: sprint-coder'; Replace-FixtureText $f '.github/agents/senior-reviewer.agent.md' 'name: "senior-reviewer"' 'name: senior-reviewer' } $null
+    Test-Case 'coder-name-mismatch' { param($f) Replace-FixtureText $f '.github/agents/sprint-coder.agent.md' 'name: "sprint-coder"' 'name: "Sprint Coder"' } 'Core worker name/allowlist mismatch: sprint-coder'
+    Test-Case 'reviewer-name-mismatch' { param($f) Replace-FixtureText $f '.github/agents/senior-reviewer.agent.md' 'name: "senior-reviewer"' 'name: "Senior Reviewer"' } 'Core worker name/allowlist mismatch: senior-reviewer'
+    Test-Case 'body-not-identifier' { param($f) Replace-FixtureText $f '.github/agents/sprint-coder.agent.md' 'name: "sprint-coder"' 'name: "other"'; Add-Content -LiteralPath (Join-Path $f '.github/agents/sprint-coder.agent.md') -Value 'name: "sprint-coder"' } 'Core worker name/allowlist mismatch: sprint-coder'
+    Test-Case 'allowlist-identifier-case' { param($f) Replace-FixtureText $f '.github/agents/sprint-architect.agent.md' 'agents: [sprint-coder, senior-reviewer]' 'agents: [Sprint-Coder, senior-reviewer]' } 'Invalid core architect delegation'
     Test-Case 'adapter-metadata' { param($f) Replace-FixtureText $f '.github/agents/sprint-architect.agent.md' 'user-invocable: true' 'user-invocable: maybe' } 'Invalid adapter visibility'
     Test-Case 'version-format' { param($f) Set-FixtureText $f 'VERSION' 'not-a-version' } 'VERSION is not semantic'
     Test-Case 'version-consistency' { param($f) Set-FixtureText $f 'VERSION' '9.9.9' } 'Inconsistent release metadata version'

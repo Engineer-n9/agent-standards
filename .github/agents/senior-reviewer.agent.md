@@ -1,5 +1,5 @@
 ---
-name: "Senior Reviewer"
+name: "senior-reviewer"
 description: "Internal read-only quality gate. Reviews approved coder output and evidence, then returns a ranked verdict to Sprint Architect."
 tools: [read, search, execute]
 model: "CodeCopilot (azure)"

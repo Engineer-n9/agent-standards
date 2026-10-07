@@ -1,5 +1,5 @@
 ---
-name: "Sprint Coder"
+name: "sprint-coder"
 description: "Internal implementation worker. Executes only an explicitly approved packet, validates it, and returns evidence to Sprint Architect."
 tools: [read, edit, search, execute, todo]
 model: ["Luna-Test (azure)", "Kimi-k2.6 (azure)", "CodeCopilot (azure)"]
