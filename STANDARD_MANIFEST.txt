@@ -1,4 +1,4 @@
-# Files that form portable candidate version 1.4.1; review/publication pending.
+# Files that form portable candidate version 1.4.2; review/publication pending.
 # Historical v1.4.0 publication verified 2026-10-07:
 # Remote v1.4.0 annotated object 0124ee1bd4aeb04ea91931c5ec9ea034b7ba49d3
 # resolves to 3f09b67f79281afc6263bf94e207593e3760da15.
